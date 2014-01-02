@@ -1,0 +1,184 @@
+<html>
+	<head>	
+		<title>Kelly King Personal Website</title>
+		<script type="text/javascript" src="//use.typekit.net/kel7zof.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+		<!--[if IE]>
+		  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if !IE]><!-->
+			<link rel="stylesheet" type="text/css" href="./css/kelly.css">
+		 <!--<![endif]-->
+		<!--[if gt IE 8]>
+
+			<link rel="stylesheet" type="text/css" href="./css/kelly.css">
+		 <!--<![endif]-->
+		 <!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="./css/ie.css" />
+		<![endif]-->
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+		<script type="text/javascript" src="./js/script.js"></script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#portfolio">Things I've Made</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#experience">Experience</a></li>
+			</ul>
+		</nav>
+		<div id="my-contact-div"><!-- contactable html placeholder --></div>
+
+		<script>
+			jQuery(function(){
+				jQuery('#my-contact-div').contactable(
+			    {
+			        subject: 'feedback URL:'+location.href,
+			        url: 'mail.php',
+			        name: 'Name',
+			        email: 'Email',
+			        dropdownTitle: 'Inquiry Type',
+			        dropdownOptions: ['General', 'Recruiter', 'Website Bug'],
+			        message : 'Message',
+			        submit : 'SEND',
+			        recievedMsg : 'Thank you for your message!',
+			        notRecievedMsg : 'Sorry but your message could not be sent, try again later',
+			        disclaimer: 'Please feel free to get in touch!',
+			        hideOnSubmit: true
+			    });
+			});
+		</script>
+
+		<div class="social">
+				<a href="https://twitter.com/aiwdesign"><div class="twitter">Twitter</div></a>
+				<a href="https://github.com/kellyk"><div class="github">Github</div></a>
+				<a href="http://www.facebook.com/Kelly.Danielle.King"><div class="facebook">Facebook</div></a>
+			</div> <!-- END #social -->
+
+		<div id="wrapper">
+
+			<div id="main-content">
+				<header>
+					<div id="header-typography">
+						<em>Hi! My name is</em>
+						<h1>Kelly King</h1>
+						<h2>I'm a <span>web designer</span> and <span>developer</span> in Ann Arbor, MI.</h2>
+					</div>
+					<div class="avatar"><img src="./images/avatar.jpg" /></div>
+					<div class="clear"></div>
+				</header>
+				<a name="about">&nbsp;</a>
+				<div id="about-me">
+					<h2>About Me</h2>
+					<p>I love designing and coding for the web. I spend most of my free time building websites and games in JavaScript and PHP. My bachelor's degree was in environmental science, and I am now working on a MS in Computer Science.</p>
+					<p>
+						Follow me on <a href="https://twitter.com/aiwdesign">twitter</a>, or if you're in the Ann Arbor area, come find me at the <a href="http://www.meetup.com/ann-arbor-php-mysql/">Ann Arbor PHP Meetup</a> every other Saturday!
+					</p>
+						
+				</div> <!-- END #about-me -->
+
+				<a name="portfolio">&nbsp;</a>
+				<div id="my-portfolio" >
+					<div class="pagebreaker whitebreaker"><h2>Portfolio</h2></div>
+					<div class="pagebreaker">
+						<div id="portfolio-content">
+							<div class="category-list"></div>
+							<div class="item-list">
+								<ul>
+									<li>Simon</li>
+									<li>Anagram</li>
+								</ul>
+							</div>
+							<div class="item">
+								<div class="item-image"><img src="./images/simon.jpg" /></div>
+								<div class="item-title"><h4>Simon</h4></div>
+								<div class="item-description">JavaScript Memory Game</div>
+								<div class="clear"></div>
+							</div>
+						</div><!-- END #portfolio-content -->
+					</div>	<!-- END #pagebreaker -->
+				</div> <!-- END #my-portfolio -->
+
+				<a name="skills">&nbsp;</a>
+				<div id="my-skills">
+					<h2>Skills</h2>
+					<img src="./images/skills-graph.png" />
+					<p>During the day, I work as a Front-end Developer building web applications for companies like Best Buy and Wells Fargo. At night, I am earning a Master's Degree in computer science. Between the rapidly-changing, learn-it-yourself nature of JavaScript development, and the foundational curriculum of a computer science degree, I have a fairly well-rounded background in programming.</p>
+				</div> <!-- END #my-skills -->
+
+				<a name="experience">&nbsp;</a>
+				<div id="my-experience">
+					<h2><a name="experience">Experience</a></h2>
+					<ul>
+						<li>
+							<h3>Education</h3>
+							<h4>Eastern Michigan University</h4>
+							<p>
+								MS in Computer Science<br />
+								<em>In Progress</em>
+							</p>
+							<h4>University of Michigan</h4>
+							<p>
+								BS in Environmental Science<br />
+								<em>August, 2010</em>
+							</p>
+						</li>
+						<li>
+							<h3>Work</h3>
+							<h4>Systems in Motion</h4>
+							<p>
+								Front-end Development<br />
+								<em>May 2013 - Present</em>
+							</p>
+							<h4>Insite Design Lab</h4>
+							<p>
+								Web Design and Development<br />
+								<em>2010 - May 2013</em>
+							</p>
+						</li>
+						<li><h3>Recognition</h3>
+							<h4><a href="http://lansing.startupweekend.org/">Lansing Startup Weekend 2013</a></h4>
+							<p>
+								Mobile Game<br />
+								<em>1st Place</em>
+							</p>
+							<h4><a href="http://annarbor.startupweekend.org/zh">Ann Arbor Startup Weekend 2013</a></h4>
+							<p>
+								Mobile Game<br />
+								<em>2nd Place</em>
+							</p>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div> <!-- END #my-experience -->
+
+			</div> <!-- END #main-content -->
+
+		</div> <!-- END #wrapper -->
+		<div class="clear"></div>
+		<footer>
+			<p>Email me: hello@kellyking.me</p>
+			<!-- <h3>Badges</h3>
+			<p> <a href="http://www.codeschool.com/users/kellyk">Code School</a> <br /><a href="http://www.lynda.com/AllCertificates/User/1027976">Lynda</a></p> -->
+		</footer>
+
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100597653); }catch(e){}</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37765307-2', 'kellyking.me');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
+</html>

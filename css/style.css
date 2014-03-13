@@ -109,10 +109,10 @@ nav ul li a:hover { color: #b5c7c3; }
 }
 header { margin-top:80px; }
 
-#about-me {
+.about {
 	margin: 50px 0 25px;
 }
-#my-skills, #my-experience, #my-portfolio { margin:25px 0; }
+.skills, .experience, .portfolio { margin:25px 0; }
 .social { 
 	position: fixed; 
 	top: 230px; 
@@ -171,21 +171,21 @@ header span {
 	float:left; 
 }
 
-#my-portfolio ul {
+.portfolio ul {
 	margin: 0 auto;
 }
 
-#my-portfolio li {
+.portfolio li {
 	float: left;
 	width: 212px;
 	height: 290px;
 	margin-right: 50px;
 	margin-bottom: 20px;
 }
-#my-portfolio li:hover {
+.portfolio li:hover {
 	cursor: pointer;
 }
-#my-portfolio li img {
+.portfolio li img {
 	opacity: 0.9;
 	-webkit-mask-image: url('../images/hexagon2.png');
 	-webkit-mask-repeat: no-repeat;
@@ -196,7 +196,7 @@ header span {
 	-o-transition: all 300ms ease;
 	transition: all 300ms ease;
 }
-#my-portfolio li img:hover {
+.portfolio li img:hover {
 	opacity: 1;
 	-webkit-mask-position: 0px;
 	-webkit-mask-image: url('../images/hexagon3.png');
@@ -215,13 +215,13 @@ header span {
 	font-size: 0.8em;
 }
 
-#my-experience ul { margin-top: 75px; }
-#my-experience ul p {
+.experience ul { margin-top: 75px; }
+.experience ul p {
 	margin: 0px; 
 	font-size: 0.8em;
 }
 
-#my-experience ul li {
+.experience ul li {
 	background: white;  
 	min-height:375px;
 	font-size:0.8em; 
@@ -230,23 +230,23 @@ header span {
 	text-align: center;
 	margin-right:3%; 
 }
-#my-experience h4 { 
+.experience h4 { 
 	margin:5px 0px; 
 	font-size:1.3em; 
 }
-#my-experience h4 a { color: #D9585D; text-decoration: none; }
-#my-experience h3 {
+.experience h4 a { color: #D9585D; text-decoration: none; }
+.experience h3 {
 	background: #0f8193; 
 	margin: 0 0 25px 0; 
 	padding: 20px 5px; 
 	color: white;
 }
-#my-experience em { 
+.experience em { 
 	font-style: italic; 
 	margin:0; 
 }
 
-#my-skills img { 
+.skills img { 
 	float:right; 
 	margin-left: 5%; 
 	max-width:90%; 
@@ -285,13 +285,13 @@ footer {
 /*------------------ Media Queries -------------------*/
 
 @media screen and (max-width: 1600px) {
-	#my-skills img { float:none; }
+	.skills img { float:none; }
 }
 
 @media screen and (max-width: 1260px) {
 	header h2, header em { font-size: 1.5em; }
 	header h1 { font-size:3.5em; }
-	#my-experience ul li {
+	.experience ul li {
 		background: none; 
 		padding:0; 
 		min-height:100px; 
@@ -299,11 +299,11 @@ footer {
 		text-align:left; 
 	}
 
-	#my-experience h3 { 
+	.experience h3 { 
 		margin: 20px 0 10px; 
 		padding: 5px 10px;  
 	}
-	#my-experience ul { margin-top:10px; }
+	.experience ul { margin-top:10px; }
 }
 
 @media screen and (max-width: 900px) {
@@ -312,7 +312,7 @@ footer {
 	#header-typography {width:50%;}
 	.category-list ul {  height:40px; line-height:40px; width:100%;}
 	.category-list ul li { display:inline; line-height:40px; margin:0; padding:7px 14px;}
-	#about-me, #my-skills, #my-experience, #my-portfolio  {
+	#about-me, .skills, .experience, .portfolio  {
 		margin-top:30px;
 	}
 	.modal-dialog {
@@ -339,7 +339,7 @@ footer {
 	}
 	.item-list ul li:nth-child(1) {margin: 0;}
 	.item-list ul li:hover { background: #409ca4; color: white; }
-	#about-me, #my-skills, #my-experience, #my-portfolio  {
+	#about-me, .skills, .experience, .portfolio  {
 		margin-top:15px;
 	}
 	#portfolio-content { min-height:400px; }

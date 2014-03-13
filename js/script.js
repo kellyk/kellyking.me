@@ -9,7 +9,7 @@ $(document).ready(function() {
 		$image = $($('[data-modal=img]'));
 
 	// respond to portfolio click
-	$('#my-portfolio').on('click', 'li', function(e) {
+	$('.portfolio').on('click', 'li', function(e) {
 		replacePortfolioContent(e);
 		$modal.modal('show');
 	});

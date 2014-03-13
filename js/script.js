@@ -1,38 +1,42 @@
 $(document).ready(function() {
+
+	// cache page elements
+	var $title = $($('[data-modal=title]')),
+		$description = $($('[data-modal=description]')),
+		$demo = $($('[data-modal=demo]')),
+		$source = $($('[data-modal=source]')),
+		$modal = $('#portfolioModal'),
+		$image = $($('[data-modal=img]'));
+
+	// respond to portfolio click
 	$('#my-portfolio').on('click', 'li', function(e) {
 		replacePortfolioContent(e);
-		$('#portfolioModal').modal('show');
+		$modal.modal('show');
 	});
 
+	// replace modal content depending on the portfolio item clicked
 	function replacePortfolioContent(e) {
-		var item = $(e.target).closest('li').get(0);
+		var $item = $($(e.target).closest('li').get(0));
+		var demoText = $item.data('demo');
+		var sourceText = $item.data('source');
 
 		//replace title, description and image with data-attribtes from li clicked
-		$('[data-modal=title]').html($(item).data('title'));
-		$('[data-modal=description]').html($(item).data('description'));
-		$('[data-modal=img]').attr('src', $(item).data('img'));
+		$title.html($item.data('title'));
+		$description.html($item.data('description'));
+		$image.attr('src', $item.data('img'));
 
-		// replace the demo and source, if applicaable
-		var demo = $(item).data('demo');
-		var source = $(item).data('source');
-		
-		if (demo) {
-			$('[data-modal=demo]').attr('href', $(item).data('demo'));
-			$('[data-modal=demo]').text($(item).data('demo'));
-			$('[data-modal=demo-display]').show();
-		} else {
-			$('[data-modal=demo-display]').hide();
+		// replace the demo and source, if applicable
+		if (demoText) {
+			$demo.attr('href', demoText);
+			$demo.text(demoText);
 		}
 
-		if (source) {
-			$('[data-modal=source]').attr('href', $(item).data('source'));
-			$('[data-modal=source]').text($(item).data('source'));
-			$('[data-modal=source-display]').show();
-		} else {
-			$('[data-modal=source-display]').hide();
+		if (sourceText) {
+			$source.attr('href', sourceText);
+			$source.text(sourceText);
 		}
-
 	}
+
 	// smooth scroll between internal anchors
 	$(function() {
 		$('a[href*=#]:not([href=#])').click(function() {

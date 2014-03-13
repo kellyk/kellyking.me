@@ -1,218 +1,235 @@
 <!DOCTYPE html>
-	<head>
-		<meta charset="utf-8">
-		<title>Kelly King Personal Website</title>
-			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<!--[if IE]>
-		  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<!--[if !IE]><!-->
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!--<![endif]-->
-		<!--[if gt IE 8]>
+<head>
+    <meta charset="utf-8">
+    <title>Kelly King Personal Website</title>
 
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-		<![endif]-->
-		<!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="css/ie.css" />
-		<![endif]-->
-		
-		<script src="//use.typekit.net/kel7zof.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-	</head>
-	<body>
-		<nav>
-			<ul>
-				<li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="http://kellyking.me/resume.pdf">Resume</a></li>
-			</ul>
-		</nav>
-		<a id="home">&nbsp;</a>
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
 
-		<div class="social">
-			<a href="https://twitter.com/aiwdesign"><div class="twitter">Twitter</div></a>
-			<a href="https://github.com/kellyk"><div class="github">Github</div></a>
-			<a href="http://www.facebook.com/Kelly.Danielle.King"><div class="facebook">Facebook</div></a>
-		</div> <!-- END #social -->
+        <!--[if !IE]><!-->
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--<![endif]-->
+        <!--[if gt IE 8]>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+        <![endif]-->
 
-		<div class="wrapper">
-			<header>
-				<div id="header-typography">
-					<em>Hi! My name is</em>
-					<h1>Kelly King</h1>
-					<h2>I'm a <span>web developer</span> and <span>designer</span> in Ann Arbor, MI.</h2>
-				</div>
-				<div class="avatar"><img src="./images/avatar.jpg" alt="Kelly King" /></div>
-				<div class="clearfix"></div>
-			</header>
-			<a id="about">&nbsp;</a>
-			<div id="about-me">
-				<h2>About Me</h2>
-				<p>I love designing and coding for the web. I spend most of my free time building websites and games in JavaScript and PHP. My bachelor's degree was in environmental science, and I am now working on a MS in Computer Science.</p>
-				<p>
-					Follow me on <a href="https://twitter.com/aiwdesign">twitter</a>, or if you're in the Ann Arbor area, come find me at the <a href="http://www.meetup.com/ann-arbor-php-mysql/">Ann Arbor PHP Meetup</a> every other Saturday!
-				</p>
-					
-			</div> <!-- END #about-me -->
-		</div>
-	<div class="page-breaker">
-		<div class="wrapper">
-			<a id="portfolio">&nbsp;</a>
-			<div id="my-portfolio">
-				<h2>Portfolio</h2>
-				<ul>
-					<li data-img="images/inspires.jpg" data-title="Inpsires" data-demo="http://inspires.io" data-description="Idea sharing application built with MeteorJS, MongoDB and Node">
-						<img src="images/inspires-thumb.png" alt="Inspires.io">
-						<p class="portfolio-title">inspires.io</p>
-						<p class="portfolio-description">MeteorJS App</p>
-					</li>
-					<li data-img="images/simon-thumb.png" data-title="Simon Says JavaScript Game" data-demo="http://kellyking.me/projects/simon" data-source="https://github.com/kellyk/javascript-simon" data-description="Simon Says game created with jQuery">
-						<img src="images/simon.png" alt="Simon Says Game">
-						<p class="portfolio-title">Simon Says</p>
-						<p class="portfolio-description">JavaScript Game</p>
-					</li>
-					<li data-img="images/hackspace.jpg" data-title="Hackspace Laravel App" data-demo="http://hackspace.org" data-description="Find great places to code. Created with Laravel, Sass and the FourSquare API.">
-						<img src="images/hackspace-thumb.jpg" alt="Hackspace">
-						<p class="portfolio-title">Hackspace</p>
-						<p class="portfolio-description">Laravel Application</p>
-					</li>
-					<li data-img="images/letter-chart.jpg" data-title="Flot Plugin" data-demo="http://codeplanet.io/demos/javascript/flot/letters/" data-source="https://github.com/kellyk/flot-letters" data-description="Extends Flot Symbol Plugin to graph letters instead of shapes.">
-						<img src="images/letter-chart-thumb.png" alt="Flot Plugin">
-						<p class="portfolio-title">Letter Graphs</p>
-						<p class="portfolio-description">FlotJS Plugin</p>
-					</li>
-					<li data-img="images/rps.jpg" data-title="Rock Paper Scissors Shop, Ann Arbor, MI" data-demo="http://blog.rockpaperscissorsshop.com/" data-description="Custom WordPress Theme">
-						<img src="images/rps-thumb.jpg" alt="Rock Paper Scissors">
-						<p class="portfolio-title">Rock Paper Scissors</p>
-						<p class="portfolio-description">WordPress Website</p>
-					</li>
-					<li data-img="images/hangman.jpg" data-title="Hangman Game" data-demo="http://www.kellyking.me/projects/hangman/" data-description="Hangman Game written in JavaScript.">
-						<img src="images/hangman-thumb.jpg" alt="Hangman">
-						<p class="portfolio-title">Hangman</p>
-						<p class="portfolio-description">JavaScript Game</p>
-					</li>
-					<li data-img="images/tip-calculator.jpg" data-title="iOS Tip Calculator" data-source="https://github.com/kellyk/iOS-Tip-Calculator" data-description="Native iOS Tip Calculator">
-						<img src="images/tip-calculator-thumb.png" alt="iOS Tip Calculator">
-						<p class="portfolio-title">Tip Calculator</p>
-						<p class="portfolio-description">iOS App</p>
-					</li>
-					<li data-img="images/legobot-controller.png" data-title="Android Lego Robot Controller" data-source="https://github.com/kellyk/android-lego-remote" data-description="Native Android application. Controls Lego Mindstorm robots via Bluetooth.">
-						<img src="images/legobot-controller-thumb.png" alt="Android Arduino Controller">
-						<p class="portfolio-title">Lego Robot Controller</p>
-						<p class="portfolio-description">Android App</p>
-					</li>
-				</ul>
-				<div class="clearfix"></div>
-			</div> <!-- END #my-portfolio -->
-			<div class="clearfix"></div>
-		</div>
-	</div>
-		<div class="wrapper">
-			<a id="skills">&nbsp;</a>
-			<div id="my-skills">
-				<h2>Skills</h2>
-				<img src="./images/skills-graph.png" alt="My Skills Graph" />
-				<p>During the day, I work as a Front-end Developer building web applications for companies like Best Buy and Wells Fargo. At night, I am earning a Master's Degree in computer science. Between the rapidly-changing, learn-it-yourself nature of JavaScript development, and the foundational curriculum of a computer science degree, my programming experience is fairly well-rounded.</p>
-			</div> <!-- END #my-skills -->
+    <script src="//use.typekit.net/kel7zof.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="http://kellyking.me/resume.pdf">Resume</a></li>
+        </ul>
+    </nav>
+    <a id="home">&nbsp;</a>
 
-			<a id="experience">&nbsp;</a>
-			<div id="my-experience">
-				<h2>Experience</h2>
-				<ul>
-					<li>
-						<h3>Education</h3>
-						<h4>Eastern Michigan University</h4>
-						<p>
-							MS in Computer Science<br />
-							<em>In Progress</em>
-						</p>
-						<h4>University of Michigan</h4>
-						<p>
-							BS in Environmental Science<br />
-							<em>August, 2010</em>
-						</p>
-					</li>
-					<li>
-						<h3>Work</h3>
-						<h4>Systems in Motion</h4>
-						<p>
-							Front-end Development<br />
-							<em>May 2013 - Present</em>
-						</p>
-						<h4>Insite Design Lab</h4>
-						<p>
-							Web Design and Development<br />
-							<em>2011 - 2013</em>
-						</p>
-					</li>
-					<li><h3>Recognition</h3>
-						<h4><a href="http://lansing.startupweekend.org/">Lansing Startup Weekend</a></h4>
-						<p>
-							Mobile Game<br />
-							<em>1st Place</em>
-						</p>
-						<h4><a href="http://annarbor.startupweekend.org/zh">Ann Arbor Startup Weekend</a></h4>
-						<p>
-							Mobile Game<br />
-							<em>2nd Place</em>
-						</p>
-					</li>
-				</ul>
-				<div class="clearfix"></div>
-			</div> <!-- END #my-experience -->
+    <aside class="social">
+        <a href="https://twitter.com/aiwdesign"><div class="twitter">Twitter</div></a>
+        <a href="https://github.com/kellyk"><div class="github">Github</div></a>
+        <a href="http://www.facebook.com/Kelly.Danielle.King"><div class="facebook">Facebook</div></a>
+    </aside> <!-- END #social -->
 
-		</div> <!-- END #wrapper -->
-		<div class="modal fade" id="portfolioModal">
-		  	<div class="modal-dialog">
-		    	<div class="modal-content">
-		      		<div class="modal-header">
-		        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        		<h3 class="modal-title" data-modal="title">Simon Says</h3>
-		      		</div>
-		      		<div class="modal-body">
-		        		<img data-modal="img" src="images/simon-thumb.png" alt="Project Details" class="pull-left"/>
-		        		<div class="portfolio-description pull-left">
-			        		<h4>Description</h4>
-			        		<div data-modal="description">JavaScript Simon</div>
-			        		<div data-modal="demo-display">
-				        		<h4>Demo</h4>
-				        		<a target="_blank" data-modal="demo" href="/projects/simon">http://kellyking.me/projects/simon</a>
-				        	</div>
-				        	<div data-modal="source-display">
-				        		<h4>Source Code</h4>
-				        		<a target="_blank" data-modal="source" href="https://github.com/kellyk/javascript-simon">https://github.com/kellyk/javascript-simon</a>
-				        	</div>
-			        	</div>
-		        		<div class="clearfix"></div>
-		      		</div>
-		      	</div><!-- /.modal-content -->
-		  	</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-		<div class="clearfix"></div>
-		<footer>
-			<p>Email me: <a href="mailto:hello@kellyking.me" target="_top">hello@kellyking.me</a></p>
-		</footer>
+    <main role="main">
+    <div class="wrapper">
+        <header>
+            <div id="header-typography">
+                <em>Hi! My name is</em>
+                <h1>Kelly King</h1>
+                <h2>I'm a <span>web developer</span> and <span>designer</span> in Ann Arbor, MI.</h2>
+            </div>
+            <div class="avatar"><img src="./images/avatar.jpg" alt="Kelly King" /></div>
+            <div class="clearfix"></div>
+        </header>
+        <a id="about">&nbsp;</a>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I love designing and coding for the web. I spend most of my free time building websites and games in JavaScript and PHP. My bachelor's degree was in environmental science, and I am now working on a MS in Computer Science.</p>
+            <p>Follow me on <a href="https://twitter.com/aiwdesign">twitter</a>, or if you're in the Ann Arbor area, come find me at the <a href="http://www.meetup.com/ann-arbor-php-mysql/">Ann Arbor PHP Meetup</a> every other Saturday!</p>
+        </section> <!-- END #about-me -->
+    </div><!-- END wrapper -->
 
-<script src="//static.getclicky.com/js" type="text/javascript"></script>
-<script type="text/javascript">try{ clicky.init(100597653); }catch(e){}</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div class="page-breaker">
+        <div class="wrapper">
+            <a id="portfolio">&nbsp;</a>
+            <section id="my-portfolio">
+                <h2>Portfolio</h2>
+                <ul class="clearfix">
+                    <li data-img="images/inspires.jpg" data-title="Inpsires" data-demo="http://inspires.io" data-description="Idea sharing application built with MeteorJS, MongoDB and Node">
+                        <img src="images/inspires-thumb.png" alt="Inspires.io" />
+                        <p class="portfolio-title">inspires.io</p>
+                        <p class="portfolio-description">MeteorJS App</p>
+                    </li>
+                    <li data-img="images/simon-thumb.png" data-title="Simon Says JavaScript Game" data-demo="http://kellyking.me/projects/simon" data-source="https://github.com/kellyk/javascript-simon" data-description="Simon Says game created with jQuery">
+                        <img src="images/simon.png" alt="Simon Says Game" />
+                        <p class="portfolio-title">Simon Says</p>
+                        <p class="portfolio-description">JavaScript Game</p>
+                    </li>
+                    <li data-img="images/hackspace.jpg" data-title="Hackspace Laravel App" data-demo="http://hackspace.org" data-description="Find great places to code. Created with Laravel, Sass and the FourSquare API.">
+                        <img src="images/hackspace-thumb.jpg" alt="Hackspace" />
+                        <p class="portfolio-title">Hackspace</p>
+                        <p class="portfolio-description">Laravel Application</p>
+                    </li>
+                    <li data-img="images/letter-chart.jpg" data-title="Flot Plugin" data-demo="http://codeplanet.io/demos/javascript/flot/letters/" data-source="https://github.com/kellyk/flot-letters" data-description="Extends Flot Symbol Plugin to graph letters instead of shapes.">
+                        <img src="images/letter-chart-thumb.png" alt="Flot Plugin" />
+                        <p class="portfolio-title">Letter Graphs</p>
+                        <p class="portfolio-description">FlotJS Plugin</p>
+                    </li>
+                    <li data-img="images/rps.jpg" data-title="Rock Paper Scissors Shop, Ann Arbor, MI" data-demo="http://blog.rockpaperscissorsshop.com/" data-description="Custom WordPress Theme">
+                        <img src="images/rps-thumb.jpg" alt="Rock Paper Scissors" />
+                        <p class="portfolio-title">Rock Paper Scissors</p>
+                        <p class="portfolio-description">WordPress Website</p>
+                    </li>
+                    <li data-img="images/hangman.jpg" data-title="Hangman Game" data-demo="http://www.kellyking.me/projects/hangman/" data-description="Hangman Game written in JavaScript." />
+                        <img src="images/hangman-thumb.jpg" alt="Hangman" />
+                        <p class="portfolio-title">Hangman</p>
+                        <p class="portfolio-description">JavaScript Game</p>
+                    </li>
+                    <li data-img="images/tip-calculator.jpg" data-title="iOS Tip Calculator" data-source="https://github.com/kellyk/iOS-Tip-Calculator" data-description="Native iOS Tip Calculator">
+                        <img src="images/tip-calculator-thumb.png" alt="iOS Tip Calculator" />
+                        <p class="portfolio-title">Tip Calculator</p>
+                        <p class="portfolio-description">iOS App</p>
+                    </li>
+                    <li data-img="images/legobot-controller.png" data-title="Android Lego Robot Controller" data-source="https://github.com/kellyk/android-lego-remote" data-description="Native Android application. Controls Lego Mindstorm robots via Bluetooth.">
+                        <img src="images/legobot-controller-thumb.png" alt="Android Arduino Controller" />
+                        <p class="portfolio-title">Lego Robot Controller</p>
+                        <p class="portfolio-description">Android App</p>
+                    </li>
+                </ul>
+            </section> <!-- END #my-portfolio -->
+            <div class="clearfix"></div>
+        </div>
+    </div>
 
-  ga('create', 'UA-37765307-2', 'kellyking.me');
-  ga('send', 'pageview');
+    <div class="wrapper">
+        <a id="skills">&nbsp;</a>
+        <section id="my-skills">
+            <h2>Skills</h2>
+            <img src="./images/skills-graph.png" alt="My Skills Graph" />
+            <p>During the day, I work as a Front-end Developer building web applications for companies like Best Buy and Wells Fargo. At night, I am earning a Master's Degree in computer science. Between the rapidly-changing, learn-it-yourself nature of JavaScript development, and the foundational curriculum of a computer science degree, my programming experience is fairly well-rounded.</p>
+        </section> <!-- END #my-skills -->
 
-</script>
+        <a id="experience">&nbsp;</a>
+        <section id="my-experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <h3>Education</h3>
+                    <h4>Eastern Michigan University</h4>
+                    <p>
+                        MS in Computer Science<br />
+                        <em>In Progress</em>
+                    </p>
+                    <h4>University of Michigan</h4>
+                    <p>
+                        BS in Environmental Science<br />
+                        <em>August, 2010</em>
+                    </p>
+                </li>
+                <li>
+                    <h3>Work</h3>
+                    <h4>Systems in Motion</h4>
+                    <p>
+                        Front-end Development<br />
+                        <em>May 2013 - Present</em>
+                    </p>
+                    <h4>Insite Design Lab</h4>
+                    <p>
+                        Web Design and Development<br />
+                        <em>2011 - 2013</em>
+                    </p>
+                </li>
+                <li>
+                    <h3>Recognition</h3>
+                    <h4><a href="http://lansing.startupweekend.org/">Lansing Startup Weekend</a></h4>
+                    <p>
+                        Mobile Game<br />
+                        <em>1st Place</em>
+                    </p>
+                    <h4><a href="http://annarbor.startupweekend.org/zh">Ann Arbor Startup Weekend</a></h4>
+                    <p>
+                        Mobile Game<br />
+                        <em>2nd Place</em>
+                    </p>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </section> <!-- END #my-experience -->
 
-	</body>
+    </div> <!-- END .wrapper -->
+    </main>
+
+	<div class="clearfix"></div>
+	<footer>
+		<p>Email me: <a href="mailto:hello@kellyking.me" target="_top">hello@kellyking.me</a></p>
+	</footer>
+
+    <!-- Portfolio Modal -->
+    <div class="modal fade" id="portfolioModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" data-modal="title">Simon Says</h3>
+                </div>
+                <div class="modal-body">
+                    <img data-modal="img" src="images/simon-thumb.png" alt="Project Details" class="pull-left"/>
+                    <div class="portfolio-description pull-left">
+                        <h4>Description</h4>
+                        <div data-modal="description">JavaScript Simon</div>
+                        <div data-modal="demo-display">
+                            <h4>Demo</h4>
+                            <a target="_blank" data-modal="demo" href="/projects/simon">http://kellyking.me/projects/simon</a>
+                        </div>
+                        <div data-modal="source-display">
+                            <h4>Source Code</h4>
+                            <a target="_blank" data-modal="source" href="https://github.com/kellyk/javascript-simon">https://github.com/kellyk/javascript-simon</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>    
+    	window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>');
+    </script>
+
+    <!-- Local js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Analytics -->
+    <script src="//static.getclicky.com/js"></script>
+    <script>
+    	// clicky analytics
+    	try{ clicky.init(100597653); }catch(e){}
+
+    	// google analytics
+      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    	ga('create', 'UA-37765307-2', 'kellyking.me');
+    	ga('send', 'pageview');
+
+    </script>
+
+</body>
 </html>

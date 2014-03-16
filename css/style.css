@@ -57,7 +57,7 @@ table {
 }
 
 /*-------------- My Styles -------------*/
-html { font: 18px;}
+html { font: 18px; }
 body { 
 	font: 55.5% "museo-sans", Arial, sans-serif;
 	line-height: 4em;
@@ -65,7 +65,6 @@ body {
 }
 a { color: #228899; }
 h1, h2, h3, h4, h6, h6 { margin: 25px 0 15px; }
-h1 { font-size: 2.5em; }
 h2 { font-size: 2em; color: #228899;}
 h3 { font-size: 1.5em; }
 h4 { color: #D9585D; }
@@ -97,22 +96,21 @@ nav ul li a {
 }
 nav ul li a:hover { color: #b5c7c3; }
 
+header { margin-top:80px; }
+
 .wrapper {
 	font-size: 2.2em; 
 	width: 70%; 
 	margin: 0 auto; 
 }
-
 .page-breaker {
 	background: #eee;
 	border: 1px solid #e3e3e3;
 }
-header { margin-top:80px; }
 
-.about {
-	margin: 50px 0 25px;
-}
-.skills, .experience, .portfolio { margin:25px 0; }
+.about { margin: 50px 0 25px; }
+.skills, .experience, .portfolio { margin: 25px 0; }
+
 .social { 
 	position: fixed; 
 	top: 230px; 
@@ -140,25 +138,27 @@ header h1, header h2, header em {
 	-o-transition:  font-size  .5s ease-in-out;
 	transition: font-size  .5s ease-in-out;
 }
-header h1 { 
+h1 {
 	font-family: "gothic-open-shaded", sans-serif !important;
 	font-style: normal;
 	font-size: 4.5em; 
 	line-height: 0.8em; 
 	color: #D9585D;
 }
-
 header em { 
 	font: 2em "lobster", Georgia, serif; 
 	font-style: italic; 
 	color: #555; 
 }
-header h2 { color: #555;}
+
+header h2 { color: #555; }
+
 header span { 
 	font-weight: bold; 
 	font-size: 1.2em; 
 }
-.avatar img { 
+.avatar img {
+	box-sizing: border-box;
 	border: 1px solid #eee; 
 	width:22%; 
 	min-width:150px; 
@@ -307,12 +307,12 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-	header h1 { font-size:2.8em; }
+	h1 { font-size:2.8em; }
 	header h2, header em { font-size: 1em; }
 	#header-typography {width:50%;}
 	.category-list ul {  height:40px; line-height:40px; width:100%;}
 	.category-list ul li { display:inline; line-height:40px; margin:0; padding:7px 14px;}
-	#about-me, .skills, .experience, .portfolio  {
+	.about, .skills, .experience, .portfolio  {
 		margin-top:30px;
 	}
 	.modal-dialog {
@@ -324,7 +324,7 @@ footer {
 @media screen and (max-width: 600px) {
 	#header-typography { width: 100%; margin-top:-20px; }
 	.avatar img { width: 70%; }
-	header h1 { font-size:2.2em; }
+	h1 { font-size:2.2em; }
 	h2 { font-size: 1.5em; }
 	h4 { margin: 5px 0 15px; }
 	nav ul li a {font-size: 0.7em; letter-spacing: 1px; }
@@ -339,9 +339,8 @@ footer {
 	}
 	.item-list ul li:nth-child(1) {margin: 0;}
 	.item-list ul li:hover { background: #409ca4; color: white; }
-	#about-me, .skills, .experience, .portfolio  {
+	.about, .skills, .experience, .portfolio  {
 		margin-top:15px;
 	}
 	#portfolio-content { min-height:400px; }
 }
-

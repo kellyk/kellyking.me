@@ -96,7 +96,7 @@ nav ul li a:hover { color: #b5c7c3; }
 
 
 #main-content { margin-top:80px; }
-#about-me, #my-skills, #my-experience, #my-portfolio { margin-top:50px; }
+#about-me, .skills, .experience, .portfolio { margin-top:50px; }
 #contactable-contactForm {display:none;}
 .category-list ul {width:100%; background: white;}
 .category-list ul li {float:left; margin: 10px; }
